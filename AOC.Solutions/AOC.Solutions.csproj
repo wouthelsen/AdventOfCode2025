@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<OutputType>Exe</OutputType>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="Inputs\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AoCHelper" Version="4.1.0" />
+	</ItemGroup>
+
+</Project>
