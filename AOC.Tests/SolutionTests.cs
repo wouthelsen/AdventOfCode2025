@@ -9,6 +9,7 @@ namespace AOC.Tests
         [TestCase(typeof(Day_01), "3", "6")]
         [TestCase(typeof(Day_02), "1227775554", "4174379265")]
         [TestCase(typeof(Day_03), "357", "3121910778619")]
+        [TestCase(typeof(Day_04), "13", "43")]
         public static async Task TestExample(Type type, string sol1, string sol2)
         {
             if (Activator.CreateInstance(type) is MyBaseDay instance)
@@ -27,6 +28,7 @@ namespace AOC.Tests
         [TestCase(typeof(Day_01), "1172", "6932")]
         [TestCase(typeof(Day_02), "26255179562", "31680313976")]
         [TestCase(typeof(Day_03), "16927", "167384358365132")]
+        [TestCase(typeof(Day_04), "1356", "8713")]
         public static async Task Test(Type type, string sol1, string sol2)
         {
             if (Activator.CreateInstance(type) is MyBaseDay instance)

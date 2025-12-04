@@ -9,9 +9,7 @@
         {
             var ranges = InputLines.SelectMany(x => x.Split(',', StringSplitOptions.RemoveEmptyEntries)).ToList();
 
-            var result = ranges.Sum(x => CountInvalidIds(x, allRepetitions));
-
-            return result;
+            return ranges.Sum(x => CountInvalidIds(x, allRepetitions)); ;
         }
 
         private static long CountInvalidIds(string range, bool allRepetitions)
